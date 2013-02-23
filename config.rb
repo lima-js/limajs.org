@@ -2,10 +2,10 @@
 project_type = :stand_alone
 
 # Publishing paths
-http_path = "/"
-http_images_path = "/images"
-http_fonts_path = "/fonts"
-css_dir = "public/stylesheets"
+http_path = "/limajs/"
+http_images_path = "/limajs/images"
+http_fonts_path = "/limajs/fonts"
+css_dir = "public/limajs/stylesheets"
 
 # Local development paths
 sass_dir = "sass"
