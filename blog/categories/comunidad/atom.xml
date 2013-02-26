@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[LimaJS]]></title>
-  <link href="http://limajs.org/atom.xml" rel="self"/>
+  <title><![CDATA[Category: comunidad | LimaJS]]></title>
+  <link href="http://limajs.org/blog/categories/comunidad/atom.xml" rel="self"/>
   <link href="http://limajs.org/"/>
   <updated>2013-02-26T03:45:40-05:00</updated>
   <id>http://limajs.org/</id>
@@ -32,22 +32,16 @@
 
 <p>Por ultimo el codigo correspondiente para hacer un hola mundo en javascript:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">(</span><span class="kd">function</span> <span class="p">(</span> <span class="nx">global</span> <span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="nx">global</span><span class="p">.</span><span class="nx">hola</span> <span class="o">=</span> <span class="s1">&#39;mundo&#39;</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">})(</span> <span class="nb">window</span> <span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">hola</span>
-</span></code></pre></td></tr></table></div></figure>
+<p>```javascript
+(function ( global ) {</p>
 
+<pre><code>global.hola = 'mundo';
+</code></pre>
+
+<p>})( window );</p>
+
+<p>window.hola
+```</p>
 
 <p>Si tienes alguna manera mas oscura y rebuscada por favor hacer pull request.</p>
 ]]></content>
