@@ -104,13 +104,14 @@ nav a:hover {
   height: 106px;
   border: 0;
   background-color: transparent;
-  background-image: url(../images/limajs.png);
+  background-image: url(limajs.png);
   background-repeat: no-repeat;
   text-indent: -9999px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   #logo {
-    background-image: url(../images/limajs@2x.png);
+    background-image: url(limajs@2x.png);
+    background-size: 289px 106px;
   }
 }
 
@@ -202,25 +203,29 @@ footer {
   body {
     font-size: 18px;
   }
+  h2 {
+    font-size: 26px;
+  }
   header, section {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   header {
     margin-bottom: 0;
   }
   section.bienvenida {
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     border-radius: 0;
-    margin-top: 0
+    margin-top: 0;
+    font-size: 18px;
   }
   nav {
     position: static;
     top: 0;
     left: 0;
     display: block;
-    margin: 40px -20px 0;
+    margin: 40px -10px 0;
     padding: 10px 0 12px;
     background: #e0e0e0;
     font-weight: bold;
