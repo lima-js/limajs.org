@@ -104,13 +104,14 @@ nav a:hover {
   height: 106px;
   border: 0;
   background-color: transparent;
-  background-image: url(limajs.png);
+  background-image: url(../images/limajs.png);
   background-repeat: no-repeat;
+  direction: ltr;
   text-indent: -9999px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   #logo {
-    background-image: url(limajs@2x.png);
+    background-image: url(../images/limajs@2x.png);
     background-size: 289px 106px;
   }
 }
@@ -155,7 +156,7 @@ p {
 
 h1, h2, h3 {
   color: #152E51;
-  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.60);
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.60);
 }
 
 h1 {
