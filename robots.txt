@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://lima-js.github.com/limajs/sitemap.xml 
