@@ -1,0 +1,233 @@
+@charset "UTF-8";
+* { box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0 0 30px 0;
+  background-color: #f2f2f2;
+  color: #222;
+  text-align: left;
+  font: 20px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+a, a:visited {
+  border-bottom: 1px dotted #3c80ca;
+  color: #3c80ca;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 900;
+}
+em {
+  font-style: italic;
+}
+
+header, section {
+  position: relative;
+  margin: 30px auto;
+  width: 750px;
+}
+
+header {
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+nav {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+nav a {
+  display: inline-block;
+  margin-left: 20px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+nav a:hover {
+  color: #222;
+}
+
+#logo {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 289px;
+  height: 106px;
+  border: 0;
+  background-color: transparent;
+  background-image: url(limajs.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #logo {
+    background-image: url(limajs@2x.png);
+    background-size: 289px 106px;
+  }
+}
+
+section a {
+  border-bottom: 1px dotted #b9d1ec;
+}
+section a:hover {
+ border-style: solid;
+}
+
+section sup {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+section.bienvenida {
+  padding: 20px 30px;
+  width: 810px;
+  border-radius: 10px;
+  background: #101010;
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.4;
+}
+section.bienvenida a,
+section.bienvenida a:visited {
+  border-bottom: 1px dotted #b9d1ec;
+  color: #b9d1ec;
+  font-weight: 900;
+}
+section.bienvenida a:hover {
+ border-style: solid;
+}
+
+p {
+  margin: 20px 0;
+}
+
+h1, h2, h3 {
+  color: #152E51;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.60);
+}
+
+h1 {
+  color: black;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1;
+}
+
+h2 {
+  margin: 40px 0 10px;
+  padding: 15px 0 5px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+dt {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: #222;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+}
+dt a {
+  margin-left: 20px;
+  font-size: 16px;
+}
+dd {
+  margin: 10px 0;
+  padding-left: 15px;
+}
+
+footer {
+  margin: 50px 0 0 0;
+  padding: 20px 0;
+  border-top: 1px solid #aaa;
+  color: #444;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  header, section {
+    width: 100%;
+    padding: 0 10px;
+  }
+  header {
+    margin-bottom: 0;
+  }
+  section.bienvenida {
+    padding: 10px;
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+    font-size: 18px;
+  }
+  nav {
+    position: static;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 40px -10px 0;
+    padding: 10px 0 12px;
+    background: #e0e0e0;
+    font-weight: bold;
+  }
+}
