@@ -69,7 +69,7 @@ em {
   font-style: italic;
 }
 
-header, section {
+header, section, .sidebar, #footer {
   position: relative;
   margin: 30px auto;
   width: 750px;
@@ -192,13 +192,33 @@ dd {
   padding-left: 15px;
 }
 
-footer {
-  margin: 50px 0 0 0;
+#footer {
+  margin: 50px auto 0;
   padding: 20px 0;
   border-top: 1px solid #aaa;
   color: #444;
   text-align: center;
   font-size: 18px;
+}
+
+.sidebar {
+  margin: 50px auto 30px;
+  font-size: 0.8em;
+  border-top: 1px solid #aaa;
+}
+
+.sidebar section {
+  float: left;
+  width: 50%;
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.sidebar li p {
+  margin: 0 0 5px;
 }
 
 @media screen and (max-width: 800px) {
