@@ -16,14 +16,15 @@ Los canales oficiales para ponerte en contacto son:
 
 ## Cómo proponer una charla?
 
-1. Crea un pull request con tu nombre y título de charla añadido al anuncio de
-nuestra próxima reunión.
-
-2. Espera que se inicie una conversación sobre tu propuesta, y opcionalmente
-haz cambios a tu propuesta original.
-
-3. Uno de nuestros commiters aceptará el pull request, hará un "merge" y
-cerrará el pull request correspondiente.
+1. Haz un `fork` de este repo.
+2. Añade tu nombre y título de charla al anuncio de nuestra próxima reunión en
+   [`index.html`](https://github.com/lima-js/limajs.org/blob/master/index.html).
+3. Crea un pull request con tus cambios. En la descripción del pull request
+   puedes añadir más info y/o referencias.
+4. Espera que se inicie una conversación sobre tu propuesta, y opcionalmente
+   haz cambios a tu propuesta original.
+5. Uno de nuestros commiters aceptará el pull request, hará un "merge" y
+   cerrará el pull request correspondiente.
 
 Si necesitas ayuda con este proceso porque eres nuevo con GitHub o git, no
 dudes en contactarnos por [Twitter](https://twitter.com/js_peru) o
