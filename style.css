@@ -115,6 +115,10 @@ a:hover {
   background-color: #F6682F;
 }
 
+.youtube:hover {
+  background-color: #FF0000;
+}
+
 .upcoming {
   padding: 20px;
   border: 1px solid #444;
