@@ -1,9 +1,9 @@
 # LimaJS.org
 
-Este repositorio contiene la página web pública de LimaJS, el grupo de usuarios
-de JavaScript en Lima, Perú.
+Este repositorio contiene la página web pública de [LimaJS](https://limajs.org),
+el grupo de usuarios de JavaScript en Lima, Perú.
 
-Tratamos de reunirnos una vez al mes. Estas reuniones son libres, todos son
+Tratamos de reunirnos una vez al mes. Estas reuniones son libres, todxs son
 bienvenidos. No se requiere invitación o nivel de conocimiento.
 
 Los canales oficiales para ponerte en contacto son:
@@ -13,6 +13,7 @@ Los canales oficiales para ponerte en contacto son:
 * [Slack](https://holalimajs.herokuapp.com/)
 * [Facebook](https://www.facebook.com/groups/jsperu/)
 * [Eventbrite](https://www.eventbrite.com/o/limajs-7913150001)
+* [YouTube](https://www.youtube.com/channel/UC9wISUVH8DNyb1AK10i21vQ)
 
 ## Cómo proponer una charla?
 
@@ -36,5 +37,5 @@ http://es.confcodeofconduct.com/
 
 ## Reuniones
 
-* [Eventbrite: Febrero 2015 - Abril 2017](https://www.eventbrite.com/o/limajs-7913150001)
+* [Eventbrite: Febrero 2015 - Marzo 2018](https://www.eventbrite.com/o/limajs-7913150001)
 * [Lanyrd: Enero 2013 - Mayo 2014](http://lanyrd.com/series/limajs/)
