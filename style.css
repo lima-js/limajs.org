@@ -119,6 +119,10 @@ a:hover {
   background-color: #FF0000;
 }
 
+.twitch:hover {
+  background-color: #6441A4;
+}
+
 .upcoming {
   padding: 20px;
   border: 1px solid #444;
