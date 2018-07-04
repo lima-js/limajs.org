@@ -14,6 +14,7 @@ Los canales oficiales para ponerte en contacto son:
 * [Facebook](https://www.facebook.com/groups/jsperu/)
 * [Eventbrite](https://www.eventbrite.com/o/limajs-7913150001)
 * [YouTube](https://www.youtube.com/channel/UC9wISUVH8DNyb1AK10i21vQ)
+* [Twitch](https://www.twitch.tv/lima_js)
 
 ## Cómo proponer una charla?
 
@@ -37,5 +38,5 @@ http://es.confcodeofconduct.com/
 
 ## Reuniones
 
-* [Eventbrite: Febrero 2015 - Marzo 2018](https://www.eventbrite.com/o/limajs-7913150001)
+* [Eventbrite: Febrero 2015 - presente](https://www.eventbrite.com/o/limajs-7913150001)
 * [Lanyrd: Enero 2013 - Mayo 2014](http://lanyrd.com/series/limajs/)
