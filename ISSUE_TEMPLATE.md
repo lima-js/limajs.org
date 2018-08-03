@@ -1,6 +1,6 @@
 > Nuestros eventos se rigen por el siguiente [Código de conducta](http://es.confcodeofconduct.com/)
 >
-> Antes de proponer una charla, recuerda revísarlo para ver si estamos en la
+> Antes de proponer una charla, recuerda revisarlo para ver si estamos en la
 > misma onda 😊
 
 
