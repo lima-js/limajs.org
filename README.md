@@ -29,7 +29,8 @@ Los canales oficiales para ponerte en contacto son:
    cerrará el pull request correspondiente.
 
 Si necesitas ayuda con este proceso porque eres nuevo con GitHub o git, no
-dudes en contactarnos por [Twitter](https://twitter.com/js_peru) o
+dudes en [abrir un issue](https://github.com/lima-js/limajs.org/issues/new) o
+contactarnos por [Twitter](https://twitter.com/js_peru) o
 [Slack](https://holalimajs.herokuapp.com/). Nos encanta ayudar ;-)
 
 ## Código de conducta
