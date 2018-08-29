@@ -9,12 +9,13 @@ bienvenidos. No se requiere invitación o nivel de conocimiento.
 Los canales oficiales para ponerte en contacto son:
 
 * [GitHub](https://github.com/lima-js)
-* [Twitter](https://twitter.com/js_peru)
+* [Twitter](https://twitter.com/LimaJSorg)
 * [Slack](https://holalimajs.herokuapp.com/)
-* [Facebook](https://www.facebook.com/groups/jsperu/)
+* [Facebook](https://www.facebook.com/LimaJSorg)
 * [Eventbrite](https://www.eventbrite.com/o/limajs-7913150001)
 * [YouTube](https://www.youtube.com/channel/UC9wISUVH8DNyb1AK10i21vQ)
 * [Twitch](https://www.twitch.tv/lima_js)
+* [MeetUp](https://www.meetup.com/LimaJS/)
 
 ## Cómo proponer una charla?
 
@@ -30,7 +31,7 @@ Los canales oficiales para ponerte en contacto son:
 
 Si necesitas ayuda con este proceso porque eres nuevo con GitHub o git, no
 dudes en [abrir un issue](https://github.com/lima-js/limajs.org/issues/new) o
-contactarnos por [Twitter](https://twitter.com/js_peru) o
+contactarnos por [Twitter](https://twitter.com/LimaJSorg) o
 [Slack](https://holalimajs.herokuapp.com/). Nos encanta ayudar ;-)
 
 ## Código de conducta

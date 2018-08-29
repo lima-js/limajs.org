@@ -123,6 +123,10 @@ a:hover {
   background-color: #6441A4;
 }
 
+.meetup:hover {
+  background-color: #e0393e;
+}
+
 .upcoming {
   padding: 20px;
   border: 1px solid #444;
