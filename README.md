@@ -40,5 +40,6 @@ http://es.confcodeofconduct.com/
 
 ## Reuniones
 
-* [Eventbrite: Febrero 2015 - presente](https://www.eventbrite.com/o/limajs-7913150001)
+* [MeetUp: Septiembre 2018 - Presente](https://www.meetup.com/LimaJS/)
+* [Eventbrite: Febrero 2015 - Agosto 2018](https://www.eventbrite.com/o/limajs-7913150001)
 * [Lanyrd: Enero 2013 - Mayo 2014](http://lanyrd.com/series/limajs/)
