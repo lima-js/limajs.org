@@ -70,6 +70,10 @@ a:hover {
   color: #e91e63;
 }
 
+.hidden {
+  display: none;
+}
+
 .logo svg {
   width: 100px;
 }
