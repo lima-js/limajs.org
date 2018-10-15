@@ -34,10 +34,32 @@ var social = function (container) {
   });
 };
 
+const loadPastMeetup = () => {
+  const onAPIResponse = (error, data) => {
+    if (error) {
+      return;
+    }
+    $('iframe.past-video-iframe')[0].src = `//www.youtube.com/embed/${JSON.parse(data).videoId}`;
+  }
+  request('https://juanlajara.com/lima-js-youtube', onAPIResponse);
+};
+
+const setupPastMeetupClick = () => {
+  const $watchPastVideo = $('button.watch-past-video')[0];
+  const onWatchPastVideoClicked = event => {
+    event.preventDefault();
+    $('div.past-video')[0].classList.remove('hidden');
+    $watchPastVideo.setAttribute('disabled', 'disabled');
+    $watchPastVideo.classList.add('cursor-normal', 'no-action');
+  }
+  $watchPastVideo.addEventListener('click', onWatchPastVideoClicked);
+}
 
 var main = function (container) {
 
   social(document.getElementsByClassName('social')[0]);
+  loadPastMeetup();
+  setupPastMeetupClick();
 };
 
 

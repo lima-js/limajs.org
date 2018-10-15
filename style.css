@@ -163,3 +163,32 @@ a:hover {
 .upcoming h2 {
   margin-top: 0;
 }
+
+.watch-past-video {
+  color: #4caf50;
+  cursor: pointer;
+}
+
+.watch-past-video.cursor-normal {
+  cursor: auto;
+}
+
+.watch-past-video.no-action {
+  color: #777;
+}
+
+.watch-past-video.no-action:hover {
+  text-decoration: none;
+}
+
+.watch-past-video:hover {
+  text-decoration: underline;
+}
+
+.watch-past-video {
+  margin: 0 0 20px;
+}
+
+.past-video {
+  margin: 0 0 20px;
+}
