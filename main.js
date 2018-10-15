@@ -1,5 +1,6 @@
 'use strict';
 
+const $ = document.querySelectorAll.bind(document);
 
 var request = function (url, cb) {
 
