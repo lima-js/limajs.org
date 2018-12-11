@@ -53,7 +53,7 @@ contactarnos por [Twitter](https://twitter.com/LimaJSorg) o
 [![Laboratoria](https://github.com/Laboratoria.png?size=200)](http://Laboratoria.la/)
 
 ¿Quieres que tu empresa u organización patrocine estos eventos?
-[Acá puedes ver cómo participar como sponsor](https://opencollective.com/limajs).
+[Acá puedes ver cómo participar como sponsor](SPONSORS.md).
 
 ## Código de conducta
 
