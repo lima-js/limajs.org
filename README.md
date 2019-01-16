@@ -51,6 +51,7 @@ contactarnos por [Twitter](https://twitter.com/LimaJSorg) o
 ## Sponsors
 
 [![Laboratoria](https://github.com/Laboratoria.png?size=200)](http://Laboratoria.la/)
+[![Mozilla Perú](https://github.com/mozillaperu.png?size=200)](https://www.mozilla.pe/)
 
 ¿Quieres que tu empresa u organización patrocine estos eventos?
 [Acá puedes ver cómo participar como sponsor](SPONSORS.md).
