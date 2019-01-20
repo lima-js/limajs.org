@@ -70,6 +70,10 @@ a:hover {
   color: #e91e63;
 }
 
+hr {
+  margin: 30px;
+}
+
 .logo svg {
   width: 100px;
 }
