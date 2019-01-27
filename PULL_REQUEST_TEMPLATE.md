@@ -3,7 +3,6 @@
 > Antes de proponer una charla, recuerda revisarlo para ver si estamos en la
 > misma onda 😊
 
-
 ## ¿Qué tipo de presentación quieres hacer?
 
 - [ ] Keynote (20 a 30 minutos)
@@ -12,8 +11,13 @@
 
 ## ¿Cuál es tu nombre?
 
+## Cuéntanos un poco sobre ti
+
+<!-- Esto será usado como tu Bio en redes sociales y para presentarte a los
+asistentes al meetup-->
 
 ## ¿Cuál es el título de tu charla?
+
 <!-- La idea es que resuma la idea central de tu presentación.
 Algo como:
 'Closures v/s Clases, la batalla final'
@@ -21,14 +25,13 @@ Algo como:
 'Introducción al desarrollo con ReactJS'
  -->
 
-
 ## Danos una descripción de tu charla (20 palabras)
+
 <!-- Con 20 palabras estamos bien :) -->
 
-
 ## ¿Tienes alguna red social donde podamos contactarte?
-<!-- Twitter / Github / Facebook / ... -->
 
+<!-- Twitter / Github / Facebook / ... -->
 
 ## ¿Representas a alguna compañía o empresa?
 
@@ -40,7 +43,7 @@ Algo como:
 
 ## ¿Quieres agregar algo más?
 
+---
 
------------
 > Muchas Gracias!
 > El equipo de LimaJS
