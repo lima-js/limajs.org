@@ -8,8 +8,15 @@ const social = (container) => {
   });
 };
 
+const schedule = (container) => {
+  fetch('./TALKS.md')
+    .then(response => response.text())
+    .then(markdown => { container.innerHTML += snarkdown(markdown) });
+};
+
 const main = () => {
   social(document.getElementsByClassName('social')[0]);
+  schedule(document.getElementById('schedule'));
 };
 
 window.addEventListener('load', main);
