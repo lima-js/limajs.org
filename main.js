@@ -34,9 +34,9 @@ window.addEventListener('load', main);
 //
 // Google analytics tracker
 //
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+(function(l,i,m,a,_,j,s){l['GoogleAnalyticsObject']=_;l[_]=l[_]||function(){
+(l[_].q=l[_].q||[]).push(arguments)},l[_].l=1*new Date();j=i.createElement(m),
+s=i.getElementsByTagName(m)[0];j.async=1;j.src=a;s.parentNode.insertBefore(j,s)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-37026516-1', 'auto');
