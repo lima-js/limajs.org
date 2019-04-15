@@ -122,9 +122,10 @@ a:hover {
 }
 
 .upcoming {
-  padding: 20px;
-  border: 1px solid #444;
-  background-color: #222;
+  background-color: rgba(200, 200, 200, 0.1);
+  margin: 2.25rem 0 0;
+  max-width: 60rem;
+  padding: 2.25rem 0;
 }
 
 .upcoming h2 {
