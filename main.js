@@ -29,7 +29,7 @@ var social = function (container) {
 
   [].forEach.call(container.children, function (child) {
 
-    request('img/' + child.className + '.svg', handleRequestCallback.bind(null, child));
+    request('images/' + child.className + '.svg', handleRequestCallback.bind(null, child));
   });
 };
 
