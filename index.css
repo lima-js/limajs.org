@@ -64,13 +64,17 @@ a:hover {
   font-size: 1.8rem;
 }
 
+.social {
+  text-align: right;
+}
+
 .social a {
   display: inline-block;
-  padding: 12px;
+  padding: 1rem;
 }
 
 .social svg {
-  width: 24px;
+  width: 2rem;
 }
 
 .social svg path,
