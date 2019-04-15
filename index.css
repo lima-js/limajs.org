@@ -44,6 +44,22 @@ a:hover {
   width: 100px;
 }
 
+.who-we-are {
+  font-size: 2rem;
+}
+
+.who-we-are .emphasis {
+  color: #111;
+}
+
+.meetup-frequency {
+  font-size: 1.8rem;
+}
+
+.meetup-requisites {
+  font-size: 1.8rem;
+}
+
 .social a {
   display: inline-block;
   padding: 12px;
