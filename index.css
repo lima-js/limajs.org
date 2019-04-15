@@ -28,16 +28,16 @@ html, body {
 body {
   background-color: ghostwhite;
   margin: 0 1rem;
-  color: #777;
+  color: #555;
 }
 
 a {
-  color: #555;
+  color: #333;
   text-decoration: none;
 }
 
 a:hover {
-  color: #333;
+  color: #111;
 }
 
 .above-the-fold {
