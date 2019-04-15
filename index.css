@@ -22,10 +22,12 @@
 html, body {
   height: 100%;
   font-family: 'Inconsolata', monospace;
+  font-size: 16px;
 }
 
 body {
   background-color: ghostwhite;
+  margin: 0 1rem;
   color: #777;
 }
 
