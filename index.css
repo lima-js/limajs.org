@@ -40,6 +40,10 @@ a:hover {
   color: #333;
 }
 
+.above-the-fold {
+  max-width: 60rem;
+}
+
 .logo svg {
   width: 100%;
 }
