@@ -135,3 +135,8 @@ a:hover {
 .LimaJS-schedule {
   font-size: 1.2rem;
 }
+
+.sponsors img {
+  display: inline-block;
+  width: 20rem;
+}

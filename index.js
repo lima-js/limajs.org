@@ -37,9 +37,18 @@ const buildSchedule = container => {
     });
 };
 
+const buildSponsors = container => {
+  fetch('./SPONSORS.md')
+    .then(response => response.text())
+    .then(markdown => {
+      container.innerHTML += snarkdown(markdown);
+    });
+};
+
 const main = () => {
   replaceSocialIcons(document.querySelector('section.social'));
   buildSchedule(document.querySelector('div.LimaJS-schedule'));
+  buildSponsors(document.querySelector('div.sponsors'));
   colorLogo();
 };
 
