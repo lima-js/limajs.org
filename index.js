@@ -29,8 +29,17 @@ const replaceSocialIcons = container => {
   });
 };
 
+const buildSchedule = container => {
+  fetch('./SCHEDULE.md')
+    .then(response => response.text())
+    .then(markdown => {
+      container.innerHTML += snarkdown(markdown);
+    });
+};
+
 const main = () => {
   replaceSocialIcons(document.querySelector('section.social'));
+  buildSchedule(document.querySelector('div.LimaJS-schedule'));
   colorLogo();
 };
 
