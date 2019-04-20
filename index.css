@@ -40,6 +40,58 @@ a:hover {
   color: #111;
 }
 
+.button {
+  box-shadow: .3125rem .3125rem 0px 0px rgba(0,0,0,.63);
+  color: ghostwhite;
+  display: inline-block;
+  font-size: .8rem;
+  height: 3.2rem;
+  letter-spacing: .125rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  padding: 0 .625rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.button:hover {
+  color: ghostwhite;
+  text-decoration: underline;
+}
+
+.button:after {
+  background: #3bade3;
+  background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  content: '';
+  display: inline-block;
+  height: 3.2rem;
+  position: absolute;
+  width: 23.25rem;
+  z-index: -1;
+  -webkit-transform: translateX(-17.5rem);
+          transform: translateX(-17.5rem);
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.button:hover:after {
+  -webkit-transform: translateX(-12.5rem);
+          transform: translateX(-12.5rem);
+}
+
+.button:focus {
+  box-shadow: none;
+  transform: translateX(.1875rem) translateY(.1875rem);
+}
+
+.button:blur {
+  box-shadow: .3125rem .3125rem 0px 0px rgba(0,0,0,.63);
+}
+
 .above-the-fold {
   max-width: 60rem;
 }
