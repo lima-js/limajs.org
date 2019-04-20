@@ -184,11 +184,28 @@ a:hover {
   margin-top: 0;
 }
 
+.upcoming .button {
+  margin-right: .625rem;
+}
+
 .LimaJS-schedule {
   font-size: 1.2rem;
+}
+
+.LimaJS-schedule ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sponsors {
+  margin: 2.25rem 0 1.25rem;
 }
 
 .sponsors img {
   display: inline-block;
   width: 20rem;
+}
+
+.code-of-conduct {
+  margin: 2.25rem 0;
 }
