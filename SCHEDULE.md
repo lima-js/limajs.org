@@ -1,3 +1,5 @@
+### 4
+### 25
 * 7:00pm - **Networking**
 * 7:30pm - **Google Apps Script** por [Katherine Chauca](https://twitter.com/KateChauca)
 * 8:00pm - **PPT Karaoke! 1**

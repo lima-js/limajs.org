@@ -46,6 +46,10 @@ a:hover {
   color: #111;
 }
 
+.hidden {
+  display: none!important;
+}
+
 .button {
   box-shadow: .3125rem .3125rem 0px 0px rgba(0,0,0,.63);
   color: ghostwhite;

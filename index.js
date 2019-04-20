@@ -1,5 +1,10 @@
 'use strict';
 
+const limaJS = {
+  day: null,
+  month: null,
+};
+
 const onWindowScroll = ({ event, logo, scheme }) => {
   scheme
     .from_hue(event.path[1].scrollY)
@@ -29,11 +34,22 @@ const replaceSocialIcons = container => {
   });
 };
 
+const meetupDateFromMarkdown = markdown => {
+  if (markdown.split('\n')[0].includes('###')) {
+    limaJS.month = +markdown.split('\n')[0].split(' ')[1];
+    limaJS.day = +markdown.split('\n')[1].split(' ')[1];
+    const [, , ...markdownWithoutDate] = markdown.split('\n');
+    document.querySelector('a.add-to-calendar').classList.remove('hidden');
+    return markdownWithoutDate.join('\n');
+  }
+  return markdown;
+};
+
 const buildSchedule = container => {
-  fetch('./SCHEDULE.md')
+  return fetch('./SCHEDULE.md')
     .then(response => response.text())
     .then(markdown => {
-      container.innerHTML += snarkdown(markdown);
+      container.innerHTML += snarkdown(meetupDateFromMarkdown(markdown));
     });
 };
 
@@ -45,9 +61,36 @@ const buildSponsors = container => {
     });
 };
 
+const formatDateTimeToGCalendar = dateTime => {
+  return dateTime
+    .toISOString()
+    .split('-')
+    .join('')
+    .split(':')
+    .join('')
+    .split('.000')
+    .join('');
+};
+
+const addToCalendarLink = container => {
+  const baseURL = 'https://calendar.google.com/calendar/r/eventedit';
+  const eventName = 'Lima JS';
+  const startDateTime = formatDateTimeToGCalendar(
+    new Date(new Date().getUTCFullYear(), limaJS.month - 1, limaJS.day, 19, 0, 0),
+  );
+  const endDateTime = formatDateTimeToGCalendar(
+    new Date(new Date().getUTCFullYear(), limaJS.month - 1, limaJS.day, 22, 0, 0),
+  );
+  const link = `${baseURL}?text=${eventName}&dates=${startDateTime}/${endDateTime}`;
+
+  container.setAttribute('href', link);
+};
+
 const main = () => {
   replaceSocialIcons(document.querySelector('section.social'));
-  buildSchedule(document.querySelector('div.LimaJS-schedule'));
+  buildSchedule(document.querySelector('div.LimaJS-schedule')).then(() => {
+    addToCalendarLink(document.querySelector('a.add-to-calendar'));
+  });
   buildSponsors(document.querySelector('div.sponsors'));
   colorLogo();
 };
