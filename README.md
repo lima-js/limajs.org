@@ -1,10 +1,15 @@
 # LimaJS.org
 
 Este repositorio contiene la página web pública de [LimaJS](https://limajs.org),
-el grupo de usuarios de JavaScript en Lima, Perú.
+la comunidad de usuarios de JavaScript en Lima, Perú.
 
-Tratamos de reunirnos una vez al mes. Estas reuniones son libres, todxs son
-bienvenidos. No se requiere invitación o nivel de conocimiento.
+Tratamos de reunirnos dos veces al mes: el tercer jueves de cada mes nos
+juntamos de 7pm a 9:30pm para escuchar charlas sobre JavaScript y temas
+relacionados; y un sábado al mes nos juntamos todo el día (de 10am a 5pm) para
+hacer talleres de NodeSchool acompañadxs de mentorxs.
+
+Estas reuniones son gratuitas, libres y todos son bienvenidos. No se requiere
+invitación o nivel de conocimiento.
 
 Los canales oficiales para ponerte en contacto son:
 
