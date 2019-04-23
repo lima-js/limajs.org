@@ -224,3 +224,8 @@ a:hover {
 .code-of-conduct .code-of-conduct-link {
   font-size: 2rem;
 }
+
+a.venue {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
