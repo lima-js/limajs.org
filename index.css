@@ -1,0 +1,231 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata Regular'),
+       local('Inconsolata-Regular'),
+       url(fonts/BjAYBlHtW3CJxDcjzrnZCKE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata Regular'),
+       local('Inconsolata-Regular'),
+       url(fonts/BjAYBlHtW3CJxDcjzrnZCIgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 10px;
+  }
+}
+
+body {
+  background-color: ghostwhite;
+  margin: 0 1rem;
+  color: #555;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #111;
+}
+
+.hidden {
+  display: none!important;
+}
+
+.button {
+  box-shadow: .3125rem .3125rem 0px 0px rgba(0,0,0,.63);
+  color: ghostwhite;
+  display: inline-block;
+  font-size: 1rem;
+  height: 3.2rem;
+  letter-spacing: .125rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  padding: 0 .625rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.button:hover {
+  color: ghostwhite;
+  text-decoration: underline;
+}
+
+.button:after {
+  background: #3bade3;
+  background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  content: '';
+  display: inline-block;
+  height: 3.2rem;
+  position: absolute;
+  width: 23.25rem;
+  z-index: -1;
+  -webkit-transform: translateX(-17.5rem);
+          transform: translateX(-17.5rem);
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.button:hover:after {
+  -webkit-transform: translateX(-14rem);
+          transform: translateX(-14rem);
+}
+
+.button:focus {
+  box-shadow: none;
+  transform: translateX(.1875rem) translateY(.1875rem);
+}
+
+.button:blur {
+  box-shadow: .3125rem .3125rem 0px 0px rgba(0,0,0,.63);
+}
+
+.above-the-fold {
+  font-size: 2rem;
+  max-width: 60rem;
+}
+
+.above-the-fold .hashtag {
+  font-size: 2rem;
+}
+
+.logo svg {
+  width: 100%;
+}
+
+.who-we-are .emphasis {
+  color: #111;
+}
+
+.social {
+  text-align: right;
+}
+
+.social a {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.social svg {
+  width: 2rem;
+}
+
+.social svg path,
+.social svg circle,
+.social svg ellipse {
+  fill: #666;
+}
+
+.social a:hover svg path,
+.social a:hover svg circle,
+.social a:hover svg ellipse {
+  fill: #fff;
+}
+
+.github:hover {
+  background-color: #181717;
+}
+
+.twitter:hover {
+  background-color: #1DA1F2;
+}
+
+.slack:hover {
+  background-color: #56B68B;
+}
+
+.facebook:hover {
+  background-color: #3B5998;
+}
+
+.eventbrite:hover {
+  background-color: #F6682F;
+}
+
+.youtube:hover {
+  background-color: #FF0000;
+}
+
+.twitch:hover {
+  background-color: #6441A4;
+}
+
+.meetup:hover {
+  background-color: #e0393e;
+}
+
+.upcoming {
+  background-color: rgba(200, 200, 200, 0.1);
+  margin: 2.25rem 0 0;
+  max-width: 60rem;
+  padding: 2.25rem 0;
+}
+
+.upcoming .section-title {
+  margin-top: 0;
+}
+
+.section-title {
+  font-size: 2rem;
+}
+
+.upcoming .cta-buttons {
+  font-size: 0;
+}
+
+.upcoming .button {
+  margin-right: .625rem;
+}
+
+.LimaJS-schedule {
+  font-size: 2rem;
+}
+
+.LimaJS-schedule ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sponsors {
+  margin: 2.25rem 0 1.25rem;
+}
+
+.sponsors img {
+  display: inline-block;
+  width: 20rem;
+}
+
+.code-of-conduct {
+  margin: 2.25rem 0;
+}
+
+.code-of-conduct .code-of-conduct-link {
+  font-size: 2rem;
+}
+
+a.venue {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}

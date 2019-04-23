@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>LimaJS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css?0.0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
@@ -13,26 +12,29 @@
     <link rel="shortcut icon" href="/favicons/favicon.ico">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css">
+    <link rel="stylesheet" href="/index.css?0.0.0">
   </head>
   <body>
 
-    <header>
-      <img width="140" class="logo" src="img/limajs-logo.svg" alt="LimaJS Logo">
-      <h1>#LimaJS</h1>
-      <p>
-        Comunidad de usuarios de JavaScript en <strong>Lima, Perú</strong>.
+    <header class="above-the-fold">
+      <img class="logo" src="images/logos/logo.svg" alt="LimaJS Logo">
+      <h1 class="hashtag">#LimaJS</h1>
+      <p class="who-we-are">
+        Somos una comunidad de usuarios de JavaScript en <span class="emphasis">Lima, Perú</span>.
       </p>
-      <p>
+      <p class="meetup-frequency">
         Tratamos de reunirnos dos veces al mes: el tercer jueves de cada mes nos
         juntamos de 7pm a 9:30pm para escuchar charlas sobre JavaScript y temas
         relacionados; y un sábado al mes nos juntamos todo el día (de 10am a
         5pm) para hacer talleres de <a href="https://nodeschool.io/">NodeSchool</a>
         acompañadxs de mentorxs.
-      <p>
+      <p class="meetup-requisites">
         Estas reuniones son gratuitas, libres y todos son bienvenidos. No se
         requiere invitación o nivel de conocimiento.
       </p>
-      <div class="social">
+      <hr>
+      <section class="social">
         <a class="github" href="https://github.com/lima-js">GitHub</a>
         <a class="twitter" href="https://twitter.com/LimaJSorg">Twitter</a>
         <a class="slack" href="https://holalimajs.herokuapp.com/">Slack</a>
@@ -40,89 +42,38 @@
         <a class="youtube" href="https://www.youtube.com/channel/UC9wISUVH8DNyb1AK10i21vQ">YouTube</a>
         <a class="twitch" href="https://www.twitch.tv/lima_js">Twitch</a>
         <a class="facebook" href="https://www.facebook.com/LimaJSorg">Facebook</a>
-      </div>
+      </section>
+      <hr>
     </header>
 
-    <div class="content">
+    <section class="content">
       <div class="upcoming">
-        <h2>Próximos eventos</h2>
-        <p>En nuestro meetup de <strong>Marzo</strong> queremos celebrar y reconocer a mujeres en JavaScript, así como inspirar a más mujeres a que se animen a programar.</p>
-        <p>También nos hemos propuesto que todas las speakers de nuestro meetup del día 21 de marzo sean <strong>mujeres</strong> (o se identifiquen como mujer).</p>
-        <h3>
-          <a href="https://www.meetup.com/LimaJS/events/fqzsdqyzfbcc/">
-            21 Marzo 2019 - LimaJS (charlas) @Laboratoria
-          </a>
-        </h3>
-        <ul>
-          <li>7:00pm - Networking</li>
-          <li>
-            7:30pm -
-            <strong>Anatomía de un package.json y los famosos npm-scripts</strong> por <a href="https://github.com/MaiaRojas"> Maia Rojas</a>
-          </li>
-          <li>
-            8:00pm -
-            <strong>PPT Karaoke! 1</strong>
-          </li>
-          <li>
-            8:15pm -
-            <strong>TBD</strong> por <a href="#">Una gran Mujer en tecnología</a>
-          </li>
-          <li>
-            8:45pm -
-            <strong>PPT Karaoke! 2</strong>
-          </li>
-          <li>
-            9:00pm -
-            <strong>TBD</strong> por <a href="#">Una Mujer inspiradora 🛬</a>
-          </li>
-          <li>9:30pm - After / BeerJS (en algún lugar cerca)</li>
-        </ul>
-        <h4>Call for papers</h4>
-        <p>
-          <a href="https://github.com/lima-js/limajs.org#cómo-proponer-una-charla">
-            ¿Cómo proponer una charla?
-          </a>
-        </p>
-
-        <!-- <hr />
-
-        <h3>
-          <a href="https://www.meetup.com/LimaJS/events/258223495/">
-            23 Febrero 2019 - NodeSchool (talleres) @Laboratoria
-          </a>
-        </h3>
-        <p>
-          ¿Quieres aprender a programar pero no sabes por dónde empezar? ¿O tal
-          vez ya programas y quieres aprender más de JavaScript y Node?
-        </p>
-        <p>
-          Ven y únete a los talleres de NodeSchool, una iniciativa de comunidad
-          para promover el aprendizaje de JavaScript y Node.js. Usamos el
-          material de la comunidad de NodeSchool y contamos con mentores para
-          acompañar a los asistentes durante los talleres, que son 100%
-          prácticos.
-        </p> -->
+        <h2 class="section-title">Agenda de <span class="month">LimaJS – 25 Abril 2019 @ <a class="venue" href="//goo.gl/maps/oJoQv61kkxuXhFR86">Laboratoria</a></span></h2>
+        <div class="LimaJS-schedule"></div>
+        <div class="cta-buttons">
+          <a class="button" href="//www.meetup.com/es-ES/LimaJS/events/fqzsdqyzgbxb/"><span>Registrarse</span></a>
+          <a class="button" href="//github.com/lima-js/limajs.org#cómo-proponer-una-charla">Proponer una charla</a>
+          <a class="hidden button add-to-calendar" href="#"><span>Agregar a Calendario</span></a>
+        </div>
       </div>
+    </section>
 
-      <h2>Sponsors</h2>
-      <p>
-        <a href="http://Laboratoria.la/">
-          <img src="https://github.com/Laboratoria.png?size=200" alt="Laboratoria">
-        </a>
-        <!-- <a href="https://www.mozilla.pe/">
-          <img src="https://github.com/mozillaperu.png?size=200" alt="Mozilla Perú">
-        </a> -->
-      </p>
-      <p>
-        <a href="https://github.com/lima-js/limajs.org/blob/master/SPONSORS.md">
-          ¿Cómo hacerse sponsor?
-        </a>.
-      </p>
+    <section class="content">
+      <div class="sponsors">
+        <h2 class="section-title">Sponsors</h2>
+      </div>
+      <a class="button" href="//github.com/lima-js/limajs.org/blob/master/BECOME_A_SPONSOR.md">Hacerse sponsor</a>
+    </section>
 
-      <h2>Código de conducta</h2>
-      <a href="http://es.confcodeofconduct.com/">http://es.confcodeofconduct.com/</a>
-    </div>
+    <section class="content">
+      <div class="code-of-conduct">
+        <h2 class="section-title">Código de conducta</h2>
+        <a class="code-of-conduct-link" href="//es.confcodeofconduct.com/">https://es.confcodeofconduct.com/</a>
+      </div>
+    </section>
 
-    <script src="main.js?0.0.0"></script>
+    <script src="//unpkg.com/color-scheme@1.0.1/lib/color-scheme.min.js"></script>
+    <script src="//unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+    <script src="index.js?0.0.0"></script>
   </body>
 </html>
