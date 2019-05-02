@@ -5,9 +5,9 @@ const limaJS = {
   month: null,
 };
 
-const onWindowScroll = ({ event, logo, scheme }) => {
+const onWindowScroll = ({ logo, scheme }) => {
   scheme
-    .from_hue(event.path[1].scrollY)
+    .from_hue(window.scrollY)
     .scheme('analogic')
     .variation('soft');
   const colors = scheme.colors();
@@ -20,8 +20,8 @@ const colorLogo = () => {
   const logo = document.querySelector('.logo');
   const fakeEvent = { path: [null, { scrollY: 0 }] };
 
-  onWindowScroll({ event: fakeEvent, logo, scheme });
-  document.addEventListener('scroll', event => onWindowScroll({ event, logo, scheme }));
+  onWindowScroll({ logo, scheme });
+  document.addEventListener('scroll', () => onWindowScroll({ logo, scheme }));
 };
 
 const replaceSocialIcons = container => {
