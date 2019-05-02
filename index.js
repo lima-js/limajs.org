@@ -19,8 +19,9 @@ const colorLogo = () => {
   const scheme = new ColorScheme();
   const logo = document.querySelector('.logo');
   const fakeEvent = { path: [null, { scrollY: 0 }] };
+  const callOnWindowScrollOnFirstLoad = onWindowScroll;
 
-  onWindowScroll({ logo, scheme });
+  callOnWindowScrollOnFirstLoad({ logo, scheme });
   document.addEventListener('scroll', () => onWindowScroll({ logo, scheme }));
 };
 
