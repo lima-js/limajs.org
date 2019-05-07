@@ -75,12 +75,12 @@ const formatDateTimeToGCalendar = dateTime => {
 
 const addToCalendarLink = container => {
   const baseURL = 'https://calendar.google.com/calendar/r/eventedit';
-  const eventName = 'Lima JS';
+  const eventName = 'Lima JS – Evento Especial de Mayo';
   const startDateTime = formatDateTimeToGCalendar(
-    new Date(new Date().getUTCFullYear(), limaJS.month - 1, limaJS.day, 19, 0, 0),
+    new Date(new Date().getUTCFullYear(), limaJS.month - 1, limaJS.day, 11, 0, 0),
   );
   const endDateTime = formatDateTimeToGCalendar(
-    new Date(new Date().getUTCFullYear(), limaJS.month - 1, limaJS.day, 22, 0, 0),
+    new Date(new Date().getUTCFullYear(), limaJS.month - 1, limaJS.day, 19, 0, 0),
   );
   const link = `${baseURL}?text=${eventName}&dates=${startDateTime}/${endDateTime}`;
 
