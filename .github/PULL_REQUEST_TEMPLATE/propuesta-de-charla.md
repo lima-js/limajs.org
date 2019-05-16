@@ -1,3 +1,12 @@
+---
+name: Propuesta de charla
+about: Usa esta plantilla para proponer una charla en nuestros meetups
+title: Título de tu charla...
+labels: cfp
+assignees: lupomontero, wixo, Xpktro, lizzie136
+
+---
+
 > Nuestros eventos se rigen por el siguiente [Código de conducta](http://es.confcodeofconduct.com/)
 >
 > Antes de proponer una charla, recuerda revisarlo para ver si estamos en la
@@ -34,12 +43,6 @@ Algo como:
 <!-- Twitter / Github / Facebook / ... -->
 
 ## ¿Representas a alguna compañía o empresa?
-
-## ¿Qué tipo de conector tiene tu laptop?
-
-- [ ] HDMI
-- [ ] Mini DisplayPort
-- [ ] VGA
 
 ## ¿Quieres agregar algo más?
 
