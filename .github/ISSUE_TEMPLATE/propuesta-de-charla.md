@@ -40,11 +40,23 @@ Algo como:
 
 ## ¿Tienes alguna red social donde podamos contactarte?
 
-<!-- Twitter / Github / Facebook / ... -->
+<!-- Twitter / Facebook / Instagram ... -->
 
 ## ¿Representas a alguna compañía o empresa?
 
 ## ¿Quieres agregar algo más?
+
+---
+
+:information_source: En los meetups normalmente usamos dos proyectores. Para
+poder proyectar en ambos necesitarás:
+
+1. [Google Chrome](https://www.google.com/chrome/) (para acceder a Chrome Cast)
+1. [Apple Airplay](https://www.apple.com/airplay/) (usuarios de macOS no tienen
+   que hacer nada) o alternativamente (Linux, Windows, ...) instalar
+   [Airtame](https://airtame.com/download/).
+
+Cualquier pregunta no duden en consultar a lxs organizadores :wave:
 
 ---
 
