@@ -86,14 +86,18 @@ const addToCalendarLink = ({ container, content: { time, duration } }) => {
   const startDateTime = formatDateTimeToGCalendar(new Date(time));
   const endDateTime = formatDateTimeToGCalendar(new Date(time + duration));
   const link = `${baseURL}?text=${eventName}&dates=${startDateTime}/${endDateTime}`;
+
   container.setAttribute('href', link);
 };
 
 const main = () => {
   replaceSocialIcons(document.querySelector('section.social'));
-  buildSchedule(document.querySelector('div.LimaJS-schedule')).then(() => {
-    addToCalendarLink(document.querySelector('a.add-to-calendar'));
-  });
+  buildSchedule(document.querySelector('div.LimaJS-schedule'))
+    .then(content => {
+      addToCalendarLink({ container: document.querySelector('a.add-to-calendar'), content });
+      return content;
+    })
+    .then(content => buildScheduleTitle(content));
   buildSponsors(document.querySelector('div.sponsors'));
   colorLogo();
 };
