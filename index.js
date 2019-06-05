@@ -1,10 +1,5 @@
 'use strict';
 
-const limaJS = {
-  day: null,
-  month: null,
-};
-
 const onWindowScroll = ({ logo, scheme }) => {
   scheme
     .from_hue(window.scrollY)
@@ -35,24 +30,36 @@ const replaceSocialIcons = container => {
   });
 };
 
-const meetupDateFromMarkdown = markdown => {
-  if (markdown.split('\n')[0].includes('###')) {
-    limaJS.month = +markdown.split('\n')[0].split(' ')[1];
-    limaJS.day = +markdown.split('\n')[1].split(' ')[1];
-    const [, , ...markdownWithoutDate] = markdown.split('\n');
-    document.querySelector('a.add-to-calendar').classList.remove('hidden');
-    return markdownWithoutDate.join('\n');
-  }
-  return markdown;
+const fetchEvents = () =>
+  new Promise((resolve, reject) => {
+    const callbackId = `__callback__${Date.now()}`;
+    const script = document.createElement('script');
+    window[callbackId] = resolve;
+
+    script.src = `//api.meetup.com/LimaJS/events?callback=${callbackId}`;
+    script.onerror = reject;
+    document.body.appendChild(script);
+  });
+
+const buildScheduleTitle = ({ time, venue: { lat, lon, name } }) => {
+  const container = document.querySelector('[data-js="section-title"]');
+  const venue = container.querySelector('.venue');
+  const month = container.querySelector('.month');
+  const monthFromDate = new Date(time).toLocaleDateString('es', { month: 'long' });
+  const gMapsFromLatLong = `//maps.google.com/?q=${lat},${lon}`;
+
+  venue.innerText = name;
+  venue.setAttribute('href', gMapsFromLatLong);
+  month.innerText = monthFromDate;
 };
 
-const buildSchedule = container => {
-  return fetch('./SCHEDULE.md')
-    .then(response => response.text())
-    .then(markdown => {
-      container.innerHTML += snarkdown(meetupDateFromMarkdown(markdown));
-    });
-};
+const buildSchedule = container =>
+  fetchEvents()
+    .then(({ data: content }) => {
+      container.innerHTML += snarkdown(content[0].description);
+      return content[0];
+    })
+    .catch(console.error.bind(console));
 
 const buildSponsors = container => {
   fetch('./SPONSORS.md')
@@ -73,17 +80,12 @@ const formatDateTimeToGCalendar = dateTime => {
     .join('');
 };
 
-const addToCalendarLink = container => {
+const addToCalendarLink = ({ container, content: { time, duration } }) => {
   const baseURL = 'https://calendar.google.com/calendar/r/eventedit';
-  const eventName = 'Lima JS – Evento Especial de Mayo';
-  const startDateTime = formatDateTimeToGCalendar(
-    new Date(new Date().getUTCFullYear(), limaJS.month - 1, limaJS.day, 11, 0, 0),
-  );
-  const endDateTime = formatDateTimeToGCalendar(
-    new Date(new Date().getUTCFullYear(), limaJS.month - 1, limaJS.day, 19, 0, 0),
-  );
+  const eventName = 'Lima JS';
+  const startDateTime = formatDateTimeToGCalendar(new Date(time));
+  const endDateTime = formatDateTimeToGCalendar(new Date(time + duration));
   const link = `${baseURL}?text=${eventName}&dates=${startDateTime}/${endDateTime}`;
-
   container.setAttribute('href', link);
 };
 
