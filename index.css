@@ -191,6 +191,10 @@ a:hover {
   font-size: 2rem;
 }
 
+.section-title .month {
+  text-transform: capitalize;
+}
+
 .upcoming .cta-buttons {
   font-size: 0;
 }
