@@ -1,5 +1,7 @@
 'use strict';
 
+const $ = document.querySelector.bind(document);
+
 const onWindowScroll = ({ logo, scheme }) => {
   scheme
     .from_hue(window.scrollY)
@@ -12,7 +14,7 @@ const onWindowScroll = ({ logo, scheme }) => {
 
 const colorLogo = () => {
   const scheme = new ColorScheme();
-  const logo = document.querySelector('.logo');
+  const logo = $('.logo');
   const fakeEvent = { path: [null, { scrollY: 0 }] };
   const callOnWindowScrollOnFirstLoad = onWindowScroll;
 
@@ -46,7 +48,7 @@ const buildRegistrationButton = (link = '#', container) => {
 };
 
 const buildScheduleTitle = ({ time, venue: { lat, lon, name } }) => {
-  const container = document.querySelector('[data-js="section-title"]');
+  const container = $('[data-js="section-title"]');
   const venue = container.querySelector('.venue');
   const month = container.querySelector('.month');
   const monthFromDate = new Date(time).toLocaleDateString('es', { month: 'long' });
@@ -95,21 +97,18 @@ const addToCalendarLink = ({ container, content: { time, duration } }) => {
 };
 
 const main = () => {
-  replaceSocialIcons(document.querySelector('section.social'));
-  buildSchedule(document.querySelector('div.LimaJS-schedule'))
+  replaceSocialIcons($('section.social'));
+  buildSchedule($('div.LimaJS-schedule'))
     .then(content => {
-      addToCalendarLink({ container: document.querySelector('a.add-to-calendar'), content });
+      addToCalendarLink({ container: $('a.add-to-calendar'), content });
       return content;
     })
     .then(
       content =>
-        buildRegistrationButton(
-          content.link,
-          document.querySelector('[data-js="registration-button"]'),
-        ) || content,
+        buildRegistrationButton(content.link, $('[data-js="registration-button"]')) || content,
     )
     .then(content => buildScheduleTitle(content));
-  buildSponsors(document.querySelector('div.sponsors'));
+  buildSponsors($('div.sponsors'));
   colorLogo();
 };
 
