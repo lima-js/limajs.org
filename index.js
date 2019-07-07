@@ -41,6 +41,10 @@ const fetchEvents = () =>
     document.body.appendChild(script);
   });
 
+const buildRegistrationButton = (link = '#', container) => {
+  container.setAttribute('href', link);
+};
+
 const buildScheduleTitle = ({ time, venue: { lat, lon, name } }) => {
   const container = document.querySelector('[data-js="section-title"]');
   const venue = container.querySelector('.venue');
@@ -97,6 +101,13 @@ const main = () => {
       addToCalendarLink({ container: document.querySelector('a.add-to-calendar'), content });
       return content;
     })
+    .then(
+      content =>
+        buildRegistrationButton(
+          content.link,
+          document.querySelector('[data-js="registration-button"]'),
+        ) || content,
+    )
     .then(content => buildScheduleTitle(content));
   buildSponsors(document.querySelector('div.sponsors'));
   colorLogo();
