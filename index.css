@@ -233,3 +233,20 @@ a.venue {
   text-decoration: underline;
   text-decoration-style: dotted;
 }
+
+/* header */
+.header-fixed {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100px;
+  background: ghostwhite;
+  width: 100%;
+  padding: 5px;
+  box-shadow: 0 4px 8px;
+  z-index: 1;
+}
+
+.header-fixed img {
+  height: 100%;
+}

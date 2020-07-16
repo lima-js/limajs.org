@@ -10,6 +10,16 @@ const onWindowScroll = ({ logo, scheme }) => {
   const colors = scheme.colors();
 
   logo.style.background = `linear-gradient(#${colors[0]},#${colors[3]})`;
+
+  // fixed header
+  const classList = $('header').classList;
+  const fixedClass = 'header-fixed';
+  const containClass = classList.contains(fixedClass);
+  if (window.scrollY > 200) {
+    if (!containClass) classList.add(fixedClass);
+  } else {
+    if (containClass) classList.remove(fixedClass);
+  }
 };
 
 const colorLogo = () => {
