@@ -16,25 +16,108 @@
     <link rel="stylesheet" href="/index.css?0.0.0">
   </head>
   <body>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>LimaJs</h1>
+        <p>Somos una comunidad de usuarios de JavaScript en Lima, Perú.</p>
+        <div class="redes">
+          <a class="github" href="https://github.com/lima-js">GitHub</a>
+          <a class="twitter" href="https://twitter.com/LimaJSorg">Twitter</a>
+          <a class="slack" href="https://holalimajs.herokuapp.com/">Slack</a>
+          <a class="meetup" href="https://www.meetup.com/LimaJS/">MeetUp</a>
+          <a class="youtube" href="https://www.youtube.com/channel/UC9wISUVH8DNyb1AK10i21vQ">YouTube</a>
+          <a class="twitch" href="https://www.twitch.tv/lima_js">Twitch</a>
+          <a class="facebook" href="https://www.facebook.com/LimaJSorg">Facebook</a>
+        </div>
+      </div>
+      <div class="hero-logo">
+        <div class="logo"></div>
+      </div>
+    </section>
 
-    <header class="above-the-fold">
-      <img class="logo" src="images/logos/logo.svg" alt="LimaJS Logo">
-      <h1 class="hashtag">#LimaJS</h1>
-      <p class="who-we-are">
-        Somos una comunidad de usuarios de JavaScript en <span class="emphasis">Lima, Perú</span>.
-      </p>
-      <p class="meetup-frequency">
-        Tratamos de reunirnos dos veces al mes: el tercer jueves de cada mes nos
-        juntamos de 7pm a 9:30pm para escuchar charlas sobre JavaScript y temas
-        relacionados; y un sábado al mes nos juntamos todo el día (de 10am a
-        5pm) para hacer talleres de <a href="https://nodeschool.io/">NodeSchool</a>
-        acompañadxs de mentorxs.
-      <p class="meetup-requisites">
-        Estas reuniones son gratuitas, libres y todos son bienvenidos. No se
-        requiere invitación o nivel de conocimiento.
-      </p>
-      <hr>
-      <section class="social">
+    <section class="wrapper">
+      <div class="subtitle">
+        <h2>Sobre Nosotros</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="content">
+        <p>¡Hola! Somos una comunidad que se reune dos veces al mes para seguir aprendiendo y compartiendo conocimiento. El tercer jueves de cada mes nos juntamos de 07:00pm
+          a 09:00pm para escuchar charlas sobre JavaScript y temas relacionados. De igual manera, un sábado al mes nos juntamos todo el día (10:00am - 5:00pm) para hacer tallares de NodeSchool junto a mentorxs.</p>
+        <p>Todas las reuniones son gratuitas, libres y todos son bienvenidos. No se requiere invitación o nivel de conocimiento.</p>
+      </div>
+    </section>
+
+    <section class="schedule">
+      <div class="panel">
+        <div class="content-box">
+          <h2 class="section-title" data-js="section-title">Agenda de <span class="month"></span> @ <a class="venue" href="#"></a></h2>
+          <div class="LimaJS-schedule"></div>
+        </div>
+      </div>
+      <div class="buttons">
+        <a class="custom-button main" data-js="registration-button" href="#"><span>Registrarse</span></a>
+        <a class="custom-button invert" href="//github.com/lima-js/limajs.org#cómo-proponer-una-charla">Proponer una charla</a>
+        <a class="custom-button invert add-to-calendar" href="#"><span>Agregar a Calendario</span></a>
+      </div>
+    </section>
+
+    <section class="wrapper">
+      <div class="subtitle">
+        <h2>Sponsors</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="content">
+        <p>Nuestros patrocinadores que apoyan esta comunidad</p>
+        <div class="sponsors grid">
+          <div class="item">
+            <div class="image"></div>
+          </div>
+          <div class="item">
+            <div class="image"></div>
+          </div>
+        </div>
+        <div class="buttons">
+          <a class="custom-button main" href="//github.com/lima-js/limajs.org/blob/master/BECOME_A_SPONSOR.md">Hacerse sponsor</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper" style="margin-bottom: 10%;">
+      <div class="subtitle">
+        <h2>Organizadores</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="content">
+        <p>Nuestro equipo</p>
+        <div class="grid">
+          <div class="item">
+            <div class="image"></div>
+          </div>
+          <div class="item">
+            <div class="image"></div>
+          </div>
+          <div class="item">
+            <div class="image"></div>
+          </div>
+          <div class="item">
+            <div class="image"></div>
+          </div>
+          <div class="item">
+            <div class="image"></div>
+          </div>
+          <div class="item">
+            <div class="image"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="text">
+        <img src="./images/logos/logo-original.svg"/>
+        <span>Todos los derechos reservados</span>
+      </div>
+      <div class="redes redes-footer">
         <a class="github" href="https://github.com/lima-js">GitHub</a>
         <a class="twitter" href="https://twitter.com/LimaJSorg">Twitter</a>
         <a class="slack" href="https://holalimajs.herokuapp.com/">Slack</a>
@@ -42,35 +125,8 @@
         <a class="youtube" href="https://www.youtube.com/channel/UC9wISUVH8DNyb1AK10i21vQ">YouTube</a>
         <a class="twitch" href="https://www.twitch.tv/lima_js">Twitch</a>
         <a class="facebook" href="https://www.facebook.com/LimaJSorg">Facebook</a>
-      </section>
-      <hr>
-    </header>
-
-    <section class="content">
-      <div class="upcoming">
-        <h2 class="section-title" data-js="section-title">Agenda de <span class="month"></span> @ <a class="venue" href="#"></a></h2>
-        <div class="LimaJS-schedule"></div>
-        <div class="cta-buttons">
-          <a class="button" data-js="registration-button" href="#"><span>Registrarse</span></a>
-          <a class="button" href="//github.com/lima-js/limajs.org#cómo-proponer-una-charla">Proponer una charla</a>
-          <a class="button add-to-calendar" href="#"><span>Agregar a Calendario</span></a>
-        </div>
       </div>
-    </section>
-
-    <section class="content">
-      <div class="sponsors">
-        <h2 class="section-title">Sponsors</h2>
-      </div>
-      <a class="button" href="//github.com/lima-js/limajs.org/blob/master/BECOME_A_SPONSOR.md">Hacerse sponsor</a>
-    </section>
-
-    <section class="content">
-      <div class="code-of-conduct">
-        <h2 class="section-title">Código de conducta</h2>
-        <a class="code-of-conduct-link" href="//es.confcodeofconduct.com/">https://es.confcodeofconduct.com/</a>
-      </div>
-    </section>
+    </footer>
 
     <script src="//unpkg.com/color-scheme@1.0.1/lib/color-scheme.min.js"></script>
     <script src="//unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>

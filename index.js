@@ -2,26 +2,6 @@
 
 const $ = document.querySelector.bind(document);
 
-const onWindowScroll = ({ logo, scheme }) => {
-  scheme
-    .from_hue(window.scrollY)
-    .scheme('analogic')
-    .variation('soft');
-  const colors = scheme.colors();
-
-  logo.style.background = `linear-gradient(#${colors[0]},#${colors[3]})`;
-};
-
-const colorLogo = () => {
-  const scheme = new ColorScheme();
-  const logo = $('.logo');
-  const fakeEvent = { path: [null, { scrollY: 0 }] };
-  const callOnWindowScrollOnFirstLoad = onWindowScroll;
-
-  callOnWindowScrollOnFirstLoad({ logo, scheme });
-  document.addEventListener('scroll', () => onWindowScroll({ logo, scheme }));
-};
-
 const replaceSocialIcons = container => {
   [...container.children].forEach(child => {
     fetch('images/icons/' + child.className + '.svg')
@@ -97,26 +77,22 @@ const addToCalendarLink = ({ container, content: { time, duration } }) => {
 };
 
 const main = () => {
-  replaceSocialIcons($('section.social'));
+  replaceSocialIcons($('div.redes'));
+  replaceSocialIcons($('div.redes-footer'));
   buildSchedule($('div.LimaJS-schedule'))
     .then(content => {
       addToCalendarLink({ container: $('a.add-to-calendar'), content });
       return content;
     })
-    .then(
-      content =>
-        buildRegistrationButton(content.link, $('[data-js="registration-button"]')) || content,
+    .then( content =>
+      buildRegistrationButton(content.link, $('[data-js="registration-button"]')) || content,
     )
     .then(content => buildScheduleTitle(content));
   buildSponsors($('div.sponsors'));
-  colorLogo();
 };
 
 window.addEventListener('load', main);
 
-//
-// Google analytics tracker
-//
 (function(l, i, m, a, _, j, s) {
   l['GoogleAnalyticsObject'] = _;
   (l[_] =
