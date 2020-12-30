@@ -22,9 +22,10 @@ a{
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 .buttons > a {
-  margin: 0 10px
+  margin: 10px
 }
 .custom-button{
   padding: 12px 20px;
@@ -54,7 +55,7 @@ a{
   font-size: 3vw;
   margin: 20px 0;
 }
-.hero > .hero-content > .redes svg{
+.hero > .hero-content > .social svg{
   width: 50px;
   margin-right: 10px;
 }
@@ -74,7 +75,7 @@ a{
 }
 .wrapper > .subtitle{
   width: fit-content;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .wrapper > .subtitle > h2{
   font-size: 2rem;
@@ -101,6 +102,12 @@ a{
   background-color: lightgoldenrodyellow;
   width: 150px;
   height: 150px;
+}
+.wrapper > .content > .grid > .item > .image img{
+  width: 100%;
+}
+.wrapper > .content > .grid > .item p{
+  font-size: 16px;
 }
 
 .schedule {
@@ -140,16 +147,47 @@ a{
 .footer > .text > span{
   margin-left: 10px;
 }
-.footer > .redes svg{
+.footer > .social svg{
   width: 30px;
   margin-left: 10px;
 }
 
-.sponsors {
-  margin: 2.25rem 0 1.25rem;
+@media screen and (max-width: 480px){
+  .hero{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .hero > .hero-content{
+    text-align: center;
+  }
+  .hero > .hero-content > h1{
+    font-size: 30px;
+  }
+  .hero > .hero-content > p{
+    font-size: 20px;
+  }
+  .hero > .hero-content > .social svg{
+    width: 20px;
+    margin-right: 5px;
+  }
+  .hero > .hero-logo{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+  .wrapper > .subtitle > h2, .panel > .content-box > h2{
+    font-size: 25px;
+  }
+
+  .footer > .social svg{
+    width: 20px;
+    margin-left: 5px;
+  }
 }
 
-.sponsors img {
-  display: inline-block;
-  width: 20rem;
+@media screen and (max-width: 800px){
+  .hero > .hero-content{
+    max-width: 300px;
+  }
 }

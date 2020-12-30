@@ -51,7 +51,18 @@ const buildSponsors = container => {
   fetch('./SPONSORS.md')
     .then(response => response.text())
     .then(markdown => {
-      container.innerHTML += snarkdown(markdown);
+      const sponsorsList = snarkdown(markdown).split('</a>');
+      sponsorsList.map(sponsor => {
+        if(sponsor.length > 0) {
+          const item = `
+          <div class="item">
+            <div class="image">
+              ${sponsor}
+            <div/>
+          <div/>`;
+          container.innerHTML += item;
+        }
+      })
     });
 };
 
@@ -77,8 +88,8 @@ const addToCalendarLink = ({ container, content: { time, duration } }) => {
 };
 
 const main = () => {
-  replaceSocialIcons($('div.redes'));
-  replaceSocialIcons($('div.redes-footer'));
+  replaceSocialIcons($('div.social'));
+  replaceSocialIcons($('div.social-footer'));
   buildSchedule($('div.LimaJS-schedule'))
     .then(content => {
       addToCalendarLink({ container: $('a.add-to-calendar'), content });
