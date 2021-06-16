@@ -3,7 +3,7 @@ name: Propuesta de charla
 about: Usa esta plantilla para proponer una charla en nuestros meetups
 title: Título de tu charla...
 labels: cfp
-assignees: lupomontero, wixo, Xpktro, lizzie136
+assignees: lupomontero, lizzie136, diananr, Xpktro, brunogonzales
 
 ---
 
