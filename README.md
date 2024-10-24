@@ -14,9 +14,9 @@ invitación o nivel de conocimiento.
 Los canales oficiales para ponerte en contacto son:
 
 * [MeetUp](https://www.meetup.com/LimaJS/)
+* [Discord](https://discord.gg/AZktPrehGN)
 * [GitHub](https://github.com/lima-js)
 * [Twitter](https://twitter.com/LimaJSorg)
-* [Slack](https://holalimajs.herokuapp.com/)
 * [Facebook](https://www.facebook.com/LimaJSorg)
 * [YouTube](https://www.youtube.com/channel/UC9wISUVH8DNyb1AK10i21vQ)
 * [Twitch](https://www.twitch.tv/lima_js)
