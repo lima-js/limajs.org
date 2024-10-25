@@ -27,9 +27,8 @@ La manera más fácil de proponer una charla es [abriendo un nuevo _issue_ en es
 repo](https://github.com/lima-js/limajs.org/issues/new). Esto automáticamente
 mostrará una _plantilla_ con instrucciones sobre qué información debes enviar.
 
-Alternativamente también puedes contactarnos por
-[Twitter](https://twitter.com/LimaJSorg) o [Slack](https://holalimajs.herokuapp.com/).
-Nos encanta ayudar ;-)
+Alternativamente también puedes contactarnos por [Discord](https://discord.gg/AZktPrehGN)
+o [Twitter](https://twitter.com/LimaJSorg). Nos encanta ayudar ;-)
 
 ## Organizadores
 
