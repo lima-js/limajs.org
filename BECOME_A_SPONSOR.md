@@ -6,8 +6,13 @@ asistentes, así como stickers, badges, señalética, nombres de dominio, cuenta
 meetup.com... Así que estamos buscando sponsors que nos ayuden a cubrir estos
 gastos.
 
-Puedes convertirte en _backer_ (personas) o _sponsor_ (organizaciones) a través
-de la cuenta de [LimaJS en Open Collective](https://opencollective.com/limajs).
+<!-- Puedes convertirte en _backer_ (personas) o _sponsor_ (organizaciones) a través
+de la cuenta de [LimaJS en Open Collective](https://opencollective.com/limajs). -->
+
+Dado que somos un grupo "no registrado legalmente", no podemos recibir pagos
+directamente. Para ayudarnos como patrocinador (sponsor) te pediremos que cubras
+alguno de los gastos directamente relacionados con los eventos (sanguchitos,
+stickers, etc).
 
 ## FAQs
 
@@ -16,7 +21,6 @@ de la cuenta de [LimaJS en Open Collective](https://opencollective.com/limajs).
 Por el momento ofrecemos un sólo nivel (_tier_) de auspicio:
 
 > Sponsor
-> $100
 >
 > Conviértete en un "Sponsor" de LimaJS, ayúdanos a sostener nuestras
 > actividades y date a conocer en la comunidad de JavaScripters de Lima! Esta
@@ -26,12 +30,14 @@ Por el momento ofrecemos un sólo nivel (_tier_) de auspicio:
 
 ### ¿Cómo hacerse sponsor?
 
-1. Navega a https://opencollective.com/limajs
+Contáctanos abriendo un issue en este repo o por Discord o redes sociales.
+
+<!-- 1. Navega a https://opencollective.com/limajs
 2. Selecciona una opción de sponsorship en la columna de la derecha.
 3. Llena el formulario con la info necesaria.
 4. Procede al pago.
 5. Contáctanos por GitHub o Twitter para que se incluya info de sponsor en
-   website y materiales promocionales.
+   website y materiales promocionales. -->
 
 ### ¿Qué recibo como sponsor?
 
@@ -50,11 +56,11 @@ Por el momento ofrecemos un sólo nivel (_tier_) de auspicio:
 También estamos abiertxs a donaciones individuales como backers de
 [LimaJS](https://limajs.org/).
 
-En [nuestra página de Open Collective](https://opencollective.com/limajs)
+<!-- En [nuestra página de Open Collective](https://opencollective.com/limajs)
 encontrarás las opciones de "Backer", tanto para donaciones puntuales (un solo,
-pago) como subscripciones mensuales (pago recurrente).
+pago) como subscripciones mensuales (pago recurrente). -->
 
-### ¿Cómo se llevan las cuentas y dónde las puedo ver?
+<!-- ### ¿Cómo se llevan las cuentas y dónde las puedo ver?
 
 Todas las cuentas (donaciones y gastos) se manejan de forma 100% abierta en
 la [cuenta de Open Collective de LimaJS](https://opencollective.com/limajs).
@@ -63,4 +69,4 @@ la [cuenta de Open Collective de LimaJS](https://opencollective.com/limajs).
 
 Si se diera el caso de que recaudáramos más de lo que terminamos gastando en la
 organización de los eventos, el monto sobrante se acumulará para eventos
-futuros.
+futuros. -->

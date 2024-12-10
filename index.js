@@ -48,21 +48,24 @@ const buildSchedule = container =>
     .catch(console.error.bind(console));
 
 const buildSponsors = container => {
-  fetch('./SPONSORS.md')
+  fetch('./README.md')
     .then(response => response.text())
     .then(markdown => {
-      const sponsorsList = snarkdown(markdown).split('</a>');
-      sponsorsList.map(sponsor => {
-        if(sponsor.length > 0) {
-          const item = `
-          <div class="item">
-            <div class="image">
-              ${sponsor}
-            <div/>
-          <div/>`;
-          container.innerHTML += item;
-        }
-      })
+      const el = document.createElement('div');
+      el.innerHTML = snarkdown(markdown);
+      const sponsorLinks = [...el.querySelectorAll('.sponsor')];
+
+      if (!sponsorLinks.length) {
+        container.appendChild(Object.assign(document.createElement('p'), {
+          textContent: 'En este momento no contamos con patrocinadores',
+        }));
+        return;
+      }
+
+      sponsorLinks.forEach((sponsorLink) => {
+        sponsorLink.classList.add('item');
+        container.appendChild(sponsorLink);
+      });
     });
 };
 
@@ -95,7 +98,7 @@ const main = () => {
       addToCalendarLink({ container: $('a.add-to-calendar'), content });
       return content;
     })
-    .then( content =>
+    .then(content =>
       buildRegistrationButton(content.link, $('[data-js="registration-button"]')) || content,
     )
     .then(content => buildScheduleTitle(content));
@@ -104,11 +107,11 @@ const main = () => {
 
 window.addEventListener('load', main);
 
-(function(l, i, m, a, _, j, s) {
+(function (l, i, m, a, _, j, s) {
   l['GoogleAnalyticsObject'] = _;
   (l[_] =
     l[_] ||
-    function() {
+    function () {
       (l[_].q = l[_].q || []).push(arguments);
     }),
     (l[_].l = 1 * new Date());

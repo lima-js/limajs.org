@@ -38,10 +38,12 @@ o [Twitter](https://twitter.com/LimaJSorg). Nos encanta ayudar ;-)
 
 ## Sponsors
 
-[![Laboratoria](https://github.com/Laboratoria.png?size=200)](http://Laboratoria.la/)
+<!-- <a class="sponsor" title="Laboratoria" href="http://Laboratoria.la/">
+  <img alt="Laboratoria" src="https://github.com/Laboratoria.png?size=200" />
+</a> -->
 
 ¿Quieres que tu empresa u organización patrocine estos eventos?
-[Acá puedes ver cómo participar como sponsor](SPONSORS.md).
+[Acá puedes ver cómo participar como sponsor](BECOME_A_SPONSOR.md).
 
 ## Código de conducta
 
