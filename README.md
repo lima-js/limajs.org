@@ -6,15 +6,14 @@ la comunidad de usuarios de JavaScript en Lima, Perú.
 Desde 2013 organizamos meetups y talleres —presenciales y en línea— para
 compartir y aprender en comunidad, así como conocer gente con intereses afines.
 
-Nuestros eventos son gratuitos y abiertos a todos: no necesitas invitación ni un nivel de conocimiento específico, solo ganas de aprender y compartir. ¡Te esperamos!
+Nuestros eventos son gratuitos y abiertos a todos: no necesitas invitación ni un
+nivel de conocimiento específico, solo ganas de aprender y compartir. ¡Te
+esperamos!
 
 <!-- Tratamos de reunirnos dos veces al mes: el tercer jueves de cada mes nos
 juntamos de 7pm a 9:30pm para escuchar charlas sobre JavaScript y temas
 relacionados; y un sábado al mes nos juntamos todo el día (de 10am a 5pm) para
 hacer talleres de NodeSchool acompañadxs de mentorxs. -->
-
-Estas reuniones son gratuitas, libres y todos son bienvenidos. No se requiere
-invitación o nivel de conocimiento.
 
 Los canales oficiales para ponerte en contacto son:
 
