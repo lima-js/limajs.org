@@ -130,7 +130,7 @@ a{
 .panel > .content-box > div {
   font-size: 20px;
 }
-.LimaJS-schedule ul {
+.panel > .content-box ul {
   list-style: none;
   padding: 0;
 }
