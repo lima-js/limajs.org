@@ -1,0 +1,22 @@
+[
+  {
+    "id": "310922994",
+    "title": "LimaJS (Sep 2025)",
+    "eventUrl": "https://www.meetup.com/limajs/events/310922994/",
+    "description": "* **Analizando código Javascript con Babel -** [@vagostep](https://github.com/vagostep)\n* **Creando experiencias en tiempo real y no morir en el intento** - [@gcavanunez](https://github.com/gcavanunez)\n* **Task Manager -** [@MangelRyujin](https://github.com/MangelRyujin)\n\nMás info en [limajs.org](https://limajs.org/)",
+    "dateTime": "2025-09-30T18:30:00-05:00",
+    "duration": "PT1H30M",
+    "venues": [
+      {
+        "id": "25598623",
+        "name": "Centro de Innovación de la Municipalidad de Miraflores",
+        "lat": -12.116274,
+        "lon": -77.044533
+      }
+    ],
+    "group": {
+      "id": "29661071",
+      "name": "LimaJS"
+    }
+  }
+]

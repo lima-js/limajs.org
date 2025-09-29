@@ -73,6 +73,7 @@ a{
   padding: 10% 2% 0;
   text-align: center;
 }
+
 .wrapper > .subtitle{
   width: fit-content;
   margin-bottom: 30px;
@@ -110,8 +111,11 @@ a{
   font-size: 16px;
 }
 
-.schedule {
-  padding: 100px 0 0;
+.events {
+  text-align: left;
+}
+.events .panel {
+  width: 100%;
 }
 .panel > .content-box {
   background-color: var(--yellow-color);
