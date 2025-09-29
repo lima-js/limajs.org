@@ -18,8 +18,8 @@ hacer talleres de NodeSchool acompañadxs de mentorxs. -->
 Los canales oficiales para ponerte en contacto son:
 
 * [MeetUp](https://www.meetup.com/LimaJS/)
-* [WhatsApp](https://chat.whatsapp.com/GC5l6LXjZ3VFDm5ZREejkJ)
 * [Discord](https://discord.gg/AZktPrehGN)
+* [WhatsApp](https://chat.whatsapp.com/GC5l6LXjZ3VFDm5ZREejkJ)
 * [GitHub](https://github.com/lima-js)
 * [Twitter](https://twitter.com/LimaJSorg)
 * [Facebook](https://www.facebook.com/LimaJSorg)
@@ -32,7 +32,10 @@ La manera más fácil de proponer una charla es [abriendo un nuevo _issue_ en es
 repo](https://github.com/lima-js/limajs.org/issues/new). Esto automáticamente
 mostrará una _plantilla_ con instrucciones sobre qué información debes enviar.
 
-Alternativamente también puedes contactarnos por [WhatsApp](https://chat.whatsapp.com/GC5l6LXjZ3VFDm5ZREejkJ), [Discord](https://discord.gg/AZktPrehGN) o [Twitter](https://twitter.com/LimaJSorg). Nos encanta ayudar ;-)
+Alternativamente también puedes contactarnos por
+[Discord](https://discord.gg/AZktPrehGN),
+[WhatsApp](https://chat.whatsapp.com/GC5l6LXjZ3VFDm5ZREejkJ) o
+[Twitter](https://twitter.com/LimaJSorg). Nos encanta ayudar ;-)
 
 ## Organizadores
 
