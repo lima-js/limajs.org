@@ -41,7 +41,7 @@ Alternativamente también puedes contactarnos por
 
 [![@lizzie136](https://github.com/lizzie136.png?size=100)](https://github.com/lizzie136)
 [![@lupomontero](https://github.com/lupomontero.png?size=100)](https://github.com/lupomontero)
-[![@diananr](https://github.com/diananr.png?size=100)](https://github.com/diananr)
+[![@joseortizm](https://github.com/joseortizm.png?size=100)](https://github.com/joseortizm)
 
 ## Sponsors
 
